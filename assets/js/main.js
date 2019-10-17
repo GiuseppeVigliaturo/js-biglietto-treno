@@ -1,5 +1,5 @@
 //dichiaro le variabili
-var km, eta, prezzolordo;
+var km, eta, prezzolordo,battuta;
 //chiedo all'utente il numero di km
 km = parseInt(prompt("inserisci il numero di km da percorrere"));
 
@@ -8,8 +8,12 @@ km = parseInt(prompt("inserisci il numero di km da percorrere"));
 eta = parseInt(prompt("inserisci la tua età"));
 
 if (eta > 65) {
-document.writeln("di la verità ti piace guardare i cantieri aaaaaa");
+battuta ="di la verità ti piace guardare i cantieri";
 
+}
+
+else {
+battuta =" ";
 }
 
 //definisco il prezzo totale del viaggio (moltiplico i km per 0,21$)
@@ -25,5 +29,6 @@ if (eta < 18){
 else if (eta >65) {
 prezzolordo = prezzolordo * (1-0.40);
 }
-
-document.writeln(prezzolordo);
+document.getElementById('anni').innerHTML=("la tua età è " + eta + "anni   " + battuta);
+document.getElementById('percorso').innerHTML=("il tuo percorso è lungo " + km + "Km");
+document.getElementById('mioid').innerHTML=("il costo del tuo biglietto è  " + prezzolordo + "Euro");
