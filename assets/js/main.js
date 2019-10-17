@@ -1,11 +1,16 @@
 //dichiaro le variabili
 var km, eta, prezzolordo;
 //chiedo all'utente il numero di km
-km = prompt("inserisci il numero di km da percorrere");
+km = parseInt(prompt("inserisci il numero di km da percorrere"));
 
 //chiedo all'utente l'età
 
-eta = prompt("inserisci la tua età");
+eta = parseInt(prompt("inserisci la tua età"));
+
+if (eta > 65) {
+document.writeln("di la verità ti piace guardare i cantieri aaaaaa");
+
+}
 
 //definisco il prezzo totale del viaggio (moltiplico i km per 0,21$)
 prezzolordo= (km * 0.21);
