@@ -1,10 +1,18 @@
+
 .navbarhgres
 {
   background: red;
 }
 .navbarhgres .logo .imglogo{
+  margin-top: auto;
   width: 100%;
   height: 100%;
+}
+
+.navbarhgres .navmenu
+{
+  margin-top: 3%;
+  margin-bottom: 0;
 }
 .navbarhgres .navmenu a
 {
@@ -62,7 +70,8 @@ left: -100%;
 
 .card .imgBx img
 {
-width: 100%;
+margin-left: 10px;
+width: 95%;
 }
 
 .card .details{
@@ -91,12 +100,37 @@ width: 100%;
   padding: 0 0 10px;
   border-bottom: 2px solid #fff;
 }
+section.offerte{
+  background-color: #9FAF95;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+section.offerte .offerta{
+margin-bottom: 5%;
+}
+section.offerte .offerta img{
+  width: 100%;
+  height: auto;
+}
+footer{
+  background-color: #282828;
+}
+.finale{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: white;
+}
 /*parte javascript*/
 .contenitorejs{
-  padding-top:4%;
+  margin-top:10%;
+  margin-bottom:10%;
   width: 50%;
-  height: 100px;
+  height: 300px;
   margin:auto;
-  background: white;
+
 }
